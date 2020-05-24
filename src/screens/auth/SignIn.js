@@ -4,7 +4,13 @@ import {View, Text, StyleSheet} from 'react-native';
 const SignIn = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>SignIn</Text>
+      <Text
+        onPress={() => {
+          navigation.navigate('Dashboard');
+        }}
+        style={styles.text}>
+        SignIn
+      </Text>
       <Text
         onPress={() => {
           navigation.navigate('SignUp');
